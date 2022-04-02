@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+.timeline-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeline-main>h1 {
+    padding: 10px;
+    width: 250px;
+    height: 50px;
+    margin-bottom: 20px;
+    color: #38D9A9;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 3px 3px rgba(105, 105, 105, 1);
+}
+
+.date-links {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.date-links button {
+    display: inline-block;
+    border: 0;
+    border-radius: 10px;
+    border: 2px solid #38d9a9;
+    padding: 1rem 1rem;
+    width: 200px;
+    margin: 10px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #111;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 250ms ease-in-out, transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #111;
+    color: whitesmoke;
+}
+
+.date-links .active {
+    color: #1e1f22;
+    background-color: #38D9A9;
+    border: 2px solid #111;
+}
+
+.date-links button:hover {
+    background-color: #38d9a9;
+    color: #1e1f22;
+}
+
+.date-links button sup {
+    display: inline
+}
+
+.timeline-container {
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline2 {
+    display: none;
+}
+
+.timeline,
+.timeline2 {
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline2 {
+    margin: 50px;
+}
+
+.timeline ul,
+.timeline2 ul {
+    margin: 0;
+    padding: 20px;
+    list-style: none;
+}
+
+.timeline ul li,
+.timeline2 ul li {
+    padding: 20px;
+    background-color: #1e1f22;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.timeline ul li:last-child,
+.timeline2 ul li:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-content h1 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    background-color: #1e1f22;
+    text-align: left;
+}
+
+.timeline-content p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.timeline-content .date {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+    .timeline {
+        position: relative;
+        top: -50px;
+    }
+    .timeline2 {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .timeline:before,
+    .timeline2:before {
+        content: "";
+        position: absolute;
+        top: 1%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 100%;
+        background-color: gray;
+    }
+    .timeline ul li,
+    .timeline2 ul li {
+        width: 50%;
+        position: relative;
+        margin-bottom: 50px;
+    }
+    .timeline ul li:nth-child(odd),
+    .timeline2 ul li:nth-child(odd) {
+        float: left;
+        clear: right;
+        transform: translateX(-30px);
+        border-radius: 20px 0px 20px 20px;
+    }
+    .timeline ul li:nth-child(even),
+    .timeline2 ul li:nth-child(even) {
+        float: right;
+        clear: left;
+        transform: translateX(30px);
+        border-radius: 0px 20px 20px 20px;
+    }
+    .timeline ul li::before,
+    .timeline2 ul li::before {
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: gray;
+        top: 0px;
+    }
+    .timeline ul li:nth-child(odd)::before,
+    .timeline2 ul li:nth-child(odd)::before {
+        transform: translate(50%, -50%);
+        right: -30px;
+    }
+    .timeline ul li:nth-child(even)::before,
+    .timeline2 ul li:nth-child(even)::before {
+        transform: translate(-50%, -50%);
+        left: -30px;
+    }
+    .timeline-content .date {
+        position: absolute;
+        top: -30px;
+    }
+    .timeline ul li:hover::before,
+    .timeline2 ul li:hover::before {
+        background-color: #38d9a9;
+    }
+}
