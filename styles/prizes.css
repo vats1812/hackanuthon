@@ -1,3 +1,25 @@
+#prizes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#prizes>h1 {
+    padding: 30px;
+    width: 250px;
+    height: 50px;
+    margin-bottom: 20px;
+    color: #38D9A9;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 3px 3px rgba(105, 105, 105, 1);
+}
+
 .cards-main-cont {
     width: 100%;
     height: 100%;
