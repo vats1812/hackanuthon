@@ -1,0 +1,95 @@
+:root {
+    --color: #3F97A2;
+}
+
+.faq {
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.faq .row .image img {
+    height: 70vh;
+    width: 50vw;
+}
+
+.faq .row .acccontainer {
+    width: 100%;
+    text-align: left;
+}
+
+.faq .row .acccontainer .acc {
+    cursor: pointer;
+}
+
+.faq .row .acccontainer .acc .accheader {
+    padding: 0px 20px 10px 0px;
+    display: flex;
+    background-color: var(--color);
+    margin: 1rem 0;
+    border-radius: 20px;
+    box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+}
+
+.faq .row .acccontainer .acc .accheader span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+    width: 5%;
+    line-height: 4rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    background: #fff;
+    color: #333;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.faq .row .acccontainer .acc .accheader h3 {
+    display: inline;
+    color: #fff;
+    font-weight: 400;
+    padding-left: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.faq .row .acccontainer .acc .accbody {
+    padding: 1rem;
+    color: #fff;
+    background-color: #111;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+    font-size: 1.3rem;
+    display: none;
+}
+
+.faq .row .acccontainer .acc:nth-child(1) .accbody {
+    display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    .faq {
+        padding: 0px;
+    }
+    .faq .row .acccontainer .acc .accheader span {
+        width: 15%;
+    }
+    .faq .row .acccontainer .acc .accheader h3 {
+        width: 75%;
+    }
+}

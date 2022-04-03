@@ -9,7 +9,8 @@
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -17,6 +18,8 @@
     <link rel="stylesheet" href="/styles/sponsors.css">
     <link rel="stylesheet" href="/styles/timeline.css">
     <link rel="stylesheet" href="/styles/prizes.css">
+    <link rel="stylesheet" href="/styles/faq.css">
+    <link rel="stylesheet" href="/styles/about.css">
     <link rel="stylesheet" href="plugins/flipdown-master/dist/flipdown.min.css">
     <script src="plugins/flipdown-master/dist/flipdown.min.js"></script>
 
@@ -117,7 +120,41 @@
     </div>
 
 
-    <div id="about-us" class="container-fluid one-page-section">
+    <div id="about-us" class="container-fluid one-page-section my-5">
+        <div class="about-container w-100 mx-5">
+            <div id="carouselExampleControls" class="carousel mx-0 w-25" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="images/corousel/gallery1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/corousel/gallery2.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/corousel/gallery3.jpg" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/corousel/gallery4.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div id="about-content" class="w-75 mx-5">
+                <h2 class="mx-5">
+                    What is HackNUThon?
+                </h2>
+                <p class="mx-5">Rapidly rising Innovation and Entrepreneurship in India made us organize the HackNUThon 2021, a stage to discover technologies, innovate ideas and solve various challenges. A non-stop, 36 hours long, a challenging product development competition,
+                    where participants can come up with their problem statements or they will be given the problem statements for innovative solutions to the respective problems. Prizes upto Rs.85,000 for winners and get cool goodies from our partners
+                    to all participants! Its gonna be an real tough challenge! Can you beat through it? If you think you can, you’re halfway there! Give it a Go!</p>
+            </div>
+        </div>
     </div>
     <div id="prizes" class="container-fluid one-page-section">
         <h1>Prizes</h1>
@@ -133,6 +170,7 @@
                         </div>
                     </div>
                     <ul class="sci">
+                        <li>5000 INR</li>
                     </ul>
                 </div>
             </div>
@@ -147,6 +185,7 @@
                         </div>
                     </div>
                     <ul class="sci">
+                        <li>3000 INR</li>
                     </ul>
                 </div>
             </div>
@@ -161,208 +200,257 @@
                         </div>
                     </div>
                     <ul class="sci">
+                        <li>2000 INR</li>
                     </ul>
                 </div>
             </div>
         </section>
-        <section class="timeline-main" id="schedule">
-            <h1>Timeline Of Events</h1>
-            <div class="date-links">
-                <button id="day1" class="active">23<sup>th</sup>April</button>
-                <button id="day2">24<sup>th</sup>April</button>
+    </div>
+    <section class="timeline-main" id="schedule">
+        <h1>Timeline Of Events</h1>
+        <div class="date-links">
+            <button id="day1" class="active">23<sup>th</sup>April</button>
+            <button id="day2">24<sup>th</sup>April</button>
+        </div>
+        <div class="timeline-container">
+
+            <div id="timeline" class="timeline">
+                <ul>
+                    <li>
+                        <div class="timeline-content">
+                            <h3 class="date">23th april, 2022</h3>
+                            <h1>8:00 am</h1>
+                            <p>Opening Ceremony</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h3 class="date">23th april, 2022</h3>
+                            <h1>08:30 am</h1>
+                            <p>Hackathon Briefing</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h3 class="date">23th april, 2022</h3>
+                            <h1>09:00 am</h1>
+                            <p>Hacking Begins</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h3 class="date">23th april, 2022</h3>
+                            <h1>11:00 am</h1>
+                            <p>Speaker Session</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h3 class="date">23th april, 2022</h3>
+                            <h1>01:00 pm</h1>
+                            <p>Lunch Break</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h3 class="date">23th april, 2022</h3>
+                            <h1>02:00 pm</h1>
+                            <p>Hacking Continues</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h3 class="date">23th april, 2022</h3>
+                            <h1>06:00 pm</h1>
+                            <p>Mentoring Session</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h3 class="date">23th april, 2022</h3>
+                            <h1>08:00 pm</h1>
+                            <p>Dinner Break</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h3 class="date">23th april, 2022</h3>
+                            <h1>09:00 pm</h1>
+                            <p>Fun Events</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="timeline-container">
+            <div id="timeline2" class="timeline2">
 
-                <div id="timeline" class="timeline">
-                    <ul>
-                        <li>
-                            <div class="timeline-content">
-                                <h3 class="date">23th april, 2022</h3>
-                                <h1>8:00 am</h1>
-                                <p>Opening Ceremony</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-content">
-                                <h3 class="date">23th april, 2022</h3>
-                                <h1>08:30 am</h1>
-                                <p>Hackathon Briefing</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-content">
-                                <h3 class="date">23th april, 2022</h3>
-                                <h1>09:00 am</h1>
-                                <p>Hacking Begins</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-content">
-                                <h3 class="date">23th april, 2022</h3>
-                                <h1>11:00 am</h1>
-                                <p>Speaker Session</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-content">
-                                <h3 class="date">23th april, 2022</h3>
-                                <h1>01:00 pm</h1>
-                                <p>Lunch Break</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-content">
-                                <h3 class="date">23th april, 2022</h3>
-                                <h1>02:00 pm</h1>
-                                <p>Hacking Continues</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-content">
-                                <h3 class="date">23th april, 2022</h3>
-                                <h1>06:00 pm</h1>
-                                <p>Mentoring Session</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-content">
-                                <h3 class="date">23th april, 2022</h3>
-                                <h1>08:00 pm</h1>
-                                <p>Dinner Break</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-content">
-                                <h3 class="date">23th april, 2022</h3>
-                                <h1>09:00 pm</h1>
-                                <p>Fun Events</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div id="timeline2" class="timeline2">
-
-                    <ul>
-                        <li>
-                            <div class="timeline-content">
-                                <h3 class="date">24th april, 2022</h3>
-                                <h1>08:00 am</h1>
-                                <p>Hacking Continues</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-content">
-                                <h3 class="date">24th april, 2022</h3>
-                                <h1>10:00 am</h1>
-                                <p>Workshop</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-content">
-                                <h3 class="date">24th april, 2022</h3>
-                                <h1>12:00 pm </h1>
-                                <p>Mentoring Session - 2</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-content">
-                                <h3 class="date">24th april, 2022</h3>
-                                <h1>01:30 pm</h1>
-                                <p>Lunch Break</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-content">
-                                <h3 class="date">24th april, 2022</h3>
-                                <h1>02:30 pm</h1>
-                                <p>Hacking Continues</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-content">
-                                <h3 class="date">24th april, 2022</h3>
-                                <h1>05:30 pm</h1>
-                                <p>Judging Session</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-content">
-                                <h3 class="date">24th april, 2022</h3>
-                                <h1>07:30 pm</h1>
-                                <p>Closing Ceremony</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
+                <ul>
+                    <li>
+                        <div class="timeline-content">
+                            <h3 class="date">24th april, 2022</h3>
+                            <h1>08:00 am</h1>
+                            <p>Hacking Continues</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h3 class="date">24th april, 2022</h3>
+                            <h1>10:00 am</h1>
+                            <p>Workshop</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h3 class="date">24th april, 2022</h3>
+                            <h1>12:00 pm </h1>
+                            <p>Mentoring Session - 2</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h3 class="date">24th april, 2022</h3>
+                            <h1>01:30 pm</h1>
+                            <p>Lunch Break</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h3 class="date">24th april, 2022</h3>
+                            <h1>02:30 pm</h1>
+                            <p>Hacking Continues</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h3 class="date">24th april, 2022</h3>
+                            <h1>05:30 pm</h1>
+                            <p>Judging Session</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h3 class="date">24th april, 2022</h3>
+                            <h1>07:30 pm</h1>
+                            <p>Closing Ceremony</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
-        </section>
 
-        <div id="sponsors" class="one-page-section sponsor-container">
-            <h1 class="heading">Sponsors</h1>
-            <h1 class="underline" style="text-align: center;">Title Sponsors</h1>
-            <div class="title-sponsors">
-                <a href="https://www.hackerearth.com/">
-                    <div class="sponsor-row">
-                        <img class="logo_alignment" src="/images/hackerearth.svg">
-                        <h5 class="logo_content">Remotely hiring the best tech talent</h5>
+        </div>
+    </section>
+    <section class="faq" id="faq">
+        <h1 class="heading">FAQ</h1>
+        <div class="row">
+            <div class="acccontainer">
+                <div class="acc">
+                    <div class="accheader">
+                        <span>+</span>
+                        <h3>What is a hackathon?</h3>
                     </div>
-                </a>
+                    <div class="accbody">
+                        <p>As the name says, its a marathon for a hack. A hackathon can be best described as an “invention marathon”, or in simple words, hackathons are about bringing your crazy ideas to reality, through technology. It’s an event where anyone,
+                            regardless of their individual field can come & participate to learn, build & share their creations, in a relaxed & productive environment.</p>
+                    </div>
+                </div>
+
+                <div class="acc">
+                    <div class="accheader">
+                        <span>+</span>
+                        <h3>How big a team can be?</h3>
+                    </div>
+                    <div class="accbody">
+                        <p>The maximum team size is four but one man army are also welcome. Participants can also team up on the discord server. You can connect with other participants there and can find a team for yourself.</p>
+                    </div>
+                </div>
+
+                <div class="acc">
+                    <div class="accheader">
+                        <span>+</span>
+                        <h3>Do I need to have any specific qualifications to be a participant for the hackathon?</h3>
+                    </div>
+                    <div class="accbody">
+                        <p>If you love to innovate, you are more than welcome to participate in the hackathon.</p>
+                    </div>
+                </div>
+
+                <div class="acc">
+                    <div class="accheader">
+                        <span>+</span>
+                        <h3>Is there any registration fees for participation?</h3>
+                    </div>
+                    <div class="accbody">
+                        <p>We don't want to monetize learning, community, and innovation. So, there's no participation/registration fees.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+    <div id="sponsors" class="one-page-section sponsor-container">
+        <h1 class="heading">Sponsors</h1>
+        <h1 class="underline" style="text-align: center;">Title Sponsors</h1>
+        <div class="title-sponsors">
+            <a href="https://www.hackerearth.com/">
+                <div class="sponsor-row">
+                    <img class="logo_alignment" src="/images/hackerearth.svg">
+                    <h5 class="logo_content">Remotely hiring the best tech talent</h5>
+                </div>
+            </a>
+            <div class="sponsor-row">
+                <a href="https://www.hackerearth.com/"><img class="logo_alignment" src="/images/hackerearth.svg"></a>
+                <h5 class="logo_content">Remotely hiring the best tech talent</h5>
+            </div>
+        </div>
+
+        <div class="platinum-container">
+            <h1 class="underline" style="text-align:center;">Platinum Sponsors</h1>
+            <div class="plat-sponsors">
+                <div class="sponsor-row">
+                    <a href="https://www.hackerearth.com/"><img class="logo_alignment" src="/images/hackerearth.svg"></a>
+                    <h5 class="logo_content">Remotely hiring the best tech talent</h5>
+                </div>
+                <div class="sponsor-row">
+                    <a href="https://www.hackerearth.com/"><img class="logo_alignment" src="/images/hackerearth.svg"></a>
+                    <h5 class="logo_content">Remotely hiring the best tech talent</h5>
+                </div>
+                <div class="sponsor-row">
+                    <a href="https://www.hackerearth.com/"><img class="logo_alignment" src="/images/hackerearth.svg"></a>
+                    <h5 class="logo_content">Remotely hiring the best tech talent</h5>
+                </div>
+                <div class="sponsor-row">
+                    <a href="https://www.hackerearth.com/"><img class="logo_alignment" src="/images/hackerearth.svg"></a>
+                    <h5 class="logo_content">Remotely hiring the best tech talent</h5>
+                </div>
+                <div class="sponsor-row">
+                    <a href="https://www.hackerearth.com/"><img class="logo_alignment" src="/images/hackerearth.svg"></a>
+                    <h5 class="logo_content">Remotely hiring the best tech talent</h5>
+                </div>
+                <div class=" sponsor-row">
+                    <a href="https://www.hackerearth.com/"><img class="logo_alignment" src="/images/hackerearth.svg"></a>
+                    <h5 class="logo_content">Remotely hiring the best tech talent</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="gold-container">
+            <h1 class="underline" style="text-align:center;">Gold Sponsors</h1>
+            <div class="gold-sponsors">
+                <div class="sponsor-row">
+                    <a href="https://www.hackerearth.com/"><img class="logo_alignment" src="/images/hackerearth.svg"></a>
+                    <h5 class="logo_content">Remotely hiring the best tech talent</h5>
+                </div>
+                <div class="sponsor-row">
+                    <a href="https://www.hackerearth.com/"><img class="logo_alignment" src="/images/hackerearth.svg"></a>
+                    <h5 class="logo_content">Remotely hiring the best tech talent</h5>
+                </div>
                 <div class="sponsor-row">
                     <a href="https://www.hackerearth.com/"><img class="logo_alignment" src="/images/hackerearth.svg"></a>
                     <h5 class="logo_content">Remotely hiring the best tech talent</h5>
                 </div>
             </div>
-
-            <div class="platinum-container">
-                <h1 class="underline" style="text-align:center;">Platinum Sponsors</h1>
-                <div class="plat-sponsors">
-                    <div class="sponsor-row">
-                        <a href="https://www.hackerearth.com/"><img class="logo_alignment" src="/images/hackerearth.svg"></a>
-                        <h5 class="logo_content">Remotely hiring the best tech talent</h5>
-                    </div>
-                    <div class="sponsor-row">
-                        <a href="https://www.hackerearth.com/"><img class="logo_alignment" src="/images/hackerearth.svg"></a>
-                        <h5 class="logo_content">Remotely hiring the best tech talent</h5>
-                    </div>
-                    <div class="sponsor-row">
-                        <a href="https://www.hackerearth.com/"><img class="logo_alignment" src="/images/hackerearth.svg"></a>
-                        <h5 class="logo_content">Remotely hiring the best tech talent</h5>
-                    </div>
-                    <div class="sponsor-row">
-                        <a href="https://www.hackerearth.com/"><img class="logo_alignment" src="/images/hackerearth.svg"></a>
-                        <h5 class="logo_content">Remotely hiring the best tech talent</h5>
-                    </div>
-                    <div class="sponsor-row">
-                        <a href="https://www.hackerearth.com/"><img class="logo_alignment" src="/images/hackerearth.svg"></a>
-                        <h5 class="logo_content">Remotely hiring the best tech talent</h5>
-                    </div>
-                    <div class=" sponsor-row">
-                        <a href="https://www.hackerearth.com/"><img class="logo_alignment" src="/images/hackerearth.svg"></a>
-                        <h5 class="logo_content">Remotely hiring the best tech talent</h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="gold-container">
-                <h1 class="underline" style="text-align:center;">Gold Sponsors</h1>
-                <div class="gold-sponsors">
-                    <div class="sponsor-row">
-                        <a href="https://www.hackerearth.com/"><img class="logo_alignment" src="/images/hackerearth.svg"></a>
-                        <h5 class="logo_content">Remotely hiring the best tech talent</h5>
-                    </div>
-                    <div class="sponsor-row">
-                        <a href="https://www.hackerearth.com/"><img class="logo_alignment" src="/images/hackerearth.svg"></a>
-                        <h5 class="logo_content">Remotely hiring the best tech talent</h5>
-                    </div>
-                    <div class="sponsor-row">
-                        <a href="https://www.hackerearth.com/"><img class="logo_alignment" src="/images/hackerearth.svg"></a>
-                        <h5 class="logo_content">Remotely hiring the best tech talent</h5>
-                    </div>
-                </div>
-            </div>
-
         </div>
+
+    </div>
     </div>
     </div>
     <div class="map" style="width:100%;border:0; display: flex; flex-direction: column; align-items: center;justify-content: center;">
@@ -425,19 +513,25 @@
                     </p>
                 </div>
                 <div class="container d-block d-md-none seperator w-75 mx-auto">&nbsp;</div>
+
                 <div id="social_links" class="col-12 col-md-4 py-3 pt-md-0 text-center text-md-left">
+                    <div class="mb-5" style="font-size: 30px; text-decoration: none; color: white;">
+                        <a href="#">
+                            <h1 class="register-now">REGISTER NOW!!</h1>
+                        </a>
+                    </div>
                     <h2>FOLLOW US ON</h2>
-                    <div style="font-size: 50px; color: white;">
+                    <div style="font-size: 30px; color: white;">
                         <a href="https://twitter.com/csinirma" target="_blank" class="mx-1">
-                            <i class="fab fa-twitter"></i>
+                            <i style="color: #1D9BF0;" class="fab fa-twitter"></i>
                         </a>
 
                         <a href="https://www.instagram.com/csiitnu/" target="_blank" class="mx-1">
-                            <i class="fab fa-instagram"></i>
+                            <i style="color: #bc2a8d;" class="fab fa-instagram"></i>
                         </a>
 
                         <a href="https://www.facebook.com/csinu" target="_blank" class="mx-1">
-                            <i class="fab fa-facebook"></i>
+                            <i style="color: #006EFF;" class="fab fa-facebook"></i>
                         </a>
 
                     </div>

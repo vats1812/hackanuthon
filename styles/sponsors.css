@@ -11,7 +11,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #BDD7DA;
 }
 
 .platinum-container,
@@ -31,7 +30,7 @@
     align-items: center;
     text-align: center;
     border-radius: 20px;
-    box-shadow: 0 3px 3px rgba(105, 105, 105, 1);
+    box-shadow: 0 8px 10px rgba(105, 105, 105, 1);
 }
 
 .underline {
@@ -84,7 +83,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: white;
+    background-color: black;
     border: solid 2px none;
     box-shadow: 0 3px 3px rgba(105, 105, 105, 0.3);
     transition: all 0.1s ease;
@@ -113,5 +112,5 @@
 }
 
 .sponsor-row:hover .logo_content {
-    color: black;
+    color: white;
 }

@@ -860,46 +860,12 @@ html::-webkit-scrollbar-thumb {
     background-color: #bdc3c7 !important;
 }
 
-
-/*=======================================
-            Form Design
-.   =====================================*/
-
-.sections {
-    background-color: #f5f6fa;
+.register-now {
+    animation: blink-animation .7s steps(5, start) infinite;
 }
 
-.title {
-    background-color: #dcdde1;
-    cursor: context-menu;
-}
-
-.title svg {
-    float: right;
-    font-size: 1.3em;
-    transform: rotateZ(180deg);
-    transition-duration: .5s;
-}
-
-.title.collapsed svg {
-    transform: rotateZ(0deg);
-}
-
-.form-group {
-    box-sizing: border-box;
-}
-
-#submit-form {
-    color: #fff;
-    background-color: #6d3cc1;
-}
-
-
-/*======================================
-            Success Message
-.   ====================================*/
-
-#SuccessMsg {
-    display: none;
-    background-color: #7bed9f;
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
 }

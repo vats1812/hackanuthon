@@ -17,7 +17,7 @@
     align-items: center;
     text-align: center;
     border-radius: 20px;
-    box-shadow: 0 3px 3px rgba(105, 105, 105, 1);
+    box-shadow: 0 8px 10px rgba(105, 105, 105, 1);
 }
 
 .cards-main-cont {
@@ -100,6 +100,7 @@
 }
 
 .card-cont .card-main .sci {
+    padding: 0;
     position: absolute;
     bottom: 50px;
     display: flex;
@@ -107,7 +108,6 @@
 
 .card-cont .card-main .sci li {
     list-style: none;
-    margin: 0 10px;
     transform: translateY(40px);
     transition: 0.5s;
     opacity: 0;
@@ -121,4 +121,14 @@
 .card-cont .card-main .sci li a {
     color: #000;
     font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .cards-main-cont {
+        flex-direction: column;
+    }
+    .card-cont .card-main .sci li {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }

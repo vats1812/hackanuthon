@@ -46,3 +46,16 @@ day2.addEventListener("click", function() {
         day1.classList.remove("active");
     }
 });
+
+// FAQ JAVASCRIPT
+
+$(document).ready(function() {
+
+    $('.accheader').click(function() {
+        $('.acc .accbody').slideUp();
+        $(this).next('.accbody').slideDown();
+        $('.acc .accheader span').text('+');
+        $(this).children('span').text('-');
+    });
+
+});
