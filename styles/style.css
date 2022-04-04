@@ -57,8 +57,8 @@
     justify-content: center;
     background-color: #428189;
     position: fixed;
-    top: -235px;
-    left: -160px;
+    top: -265px;
+    left: -175px;
     z-index: 99;
     border-radius: 50px;
     transition: all 0.5s;
@@ -133,7 +133,7 @@
     display: inline-block;
     font-size: 2rem;
     font-weight: 600;
-    color: #38D9A9;
+    color: #3BC9DB;
 }
 
 #heroSection .head span {
@@ -145,7 +145,7 @@
     display: inline-block;
     font-size: 1.5rem;
     font-weight: 600;
-    color: #38D9A9;
+    color: #3BC9DB;
 }
 
 #heroSection .head2 {
@@ -153,9 +153,15 @@
 }
 
 #heroSection .logo-hero {
-    width: 80vw;
+    width: 70vw;
     height: auto;
     max-height: 300px;
+}
+
+@media only screen and (max-width:768px) {
+    #heroSection .logo-hero {
+        width: 90vw;
+    }
 }
 
 #heroSection .logo-hero img {
@@ -244,20 +250,6 @@
 }
 
 
-/*============================================
-        Nav-bar item click overlap solution
-.   ============================================*/
-
-#about-us:before,
-#sponsors:before {
-    display: block;
-    content: " ";
-    margin-top: -100px;
-    height: 100px;
-    visibility: hidden;
-}
-
-
 /*======================== 
         CountDown 
     ======================== */
@@ -271,13 +263,18 @@
 }
 
 .countdown-title {
-    /* background-color: #e97e2e; */
     margin-bottom: 2vh;
     font-size: 2.5rem;
     color: #fff;
     font-weight: 700;
     letter-spacing: .08em;
     text-transform: uppercase;
+}
+
+#countdown-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -847,7 +844,6 @@ html::-webkit-scrollbar-thumb {
 #footer {
     background-color: #1e272e;
     color: #bdc3c7;
-    /* padding: 2% 2% 0%; */
 }
 
 #footer a {

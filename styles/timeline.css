@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
 .timeline-main {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,7 +33,7 @@
     display: inline-block;
     border: 0;
     border-radius: 10px;
-    border: 2px solid #38d9a9;
+    border: 2px solid #3BC9DB;
     padding: 1rem 1rem;
     width: 200px;
     margin: 10px;
@@ -50,12 +51,12 @@
 
 .date-links .active {
     color: #1e1f22;
-    background-color: #38D9A9;
+    background-color: #3BC9DB;
     border: 2px solid #111;
 }
 
 .date-links button:hover {
-    background-color: #38d9a9;
+    background-color: #3BC9DB;
     color: #1e1f22;
 }
 
@@ -204,6 +205,6 @@
     }
     .timeline ul li:hover::before,
     .timeline2 ul li:hover::before {
-        background-color: #38d9a9;
+        background-color: #3BC9DB;
     }
 }
