@@ -97,7 +97,7 @@
 .   ====================================*/
 
 #hero {
-    background: url("/images/background.jpg") no-repeat center center fixed;
+    background: url("images/background.jpg") no-repeat center center fixed;
     background-size: cover;
     margin: 0px;
     padding: 0px;
@@ -638,13 +638,22 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    animation: hidden 3.2s ease-in-out;
+}
+
+@keyframes hidden {
+    0% {
+        overflow: hidden;
+    }
+    100% {
+        overflow: hidden;
+    }
 }
 
 body {
     overflow-x: hidden;
     font-family: 'Lato', 'sans-serif';
     font-size: 16px;
-    overflow-x: hidden;
 }
 
 html::-webkit-scrollbar {

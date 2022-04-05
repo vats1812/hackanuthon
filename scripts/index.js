@@ -1,3 +1,13 @@
+// PRELOADER
+
+$('document').ready(function() {
+    setTimeout(function() {
+        $('#preloader').fadeOut(500);
+        $('html').style.overflow = 'visible';
+    }, 3000);
+});
+
+
 //main countdown
 
 document.addEventListener('DOMContentLoaded', () => {
